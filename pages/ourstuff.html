@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,height=device-height">
+    <meta name="author" content="EdanEA" />
+
+    <meta name="description" content="Edab INC. is a quote-unquote company, that does some things--mainly with coding and such. We've got some Discord bots, y'know. That's pretty much it." />
+
+    <meta itemprop="name" content="edanea.github.io" />
+    <meta itemprop="description" content="Edab INC. is a quote-unquote company, that does some things--mainly with coding and such. We've got some Discord bots, y'know. That's pretty much it." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://edanea.github.io" />
+    <meta property="og:image" content="../assets/icons/icon.png" />
+    <meta property="og:title" content="Edab INC." />
+    <meta property="og:description" content="A joke, that's kind-of a business, too." />
+    <meta property="og:site_name" content="edanea.github.io" />
+
+    <title>Stuff | Edab INC.</title>
+
+    <link rel="icon" type="img/ico" href="../assets/icons/logo.ico" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
+
+    <script>
+    function updateActive(clicked, other) {
+      for(var i = 0; i < other.length; i++) {
+        if(other[i].classList.contains("active") && clicked.id !== other[i].id) {
+          other[i].classList.remove("active");
+          clicked.classList.add("active");
+          break;
+        } else continue;
+      }
+    }
+	
+	function inner(id, val) {
+	  try {
+	    document.getElementById(id).innerHTML = val;
+		console.log('xd');
+		return;
+	  } catch (e) {
+	    console.log(`Unknown ID: ${id}`);
+		return;
+	  }
+	}
+    </script>
+  </head>
+
+  <body>
+    <div class=nav-bar>
+      <a id="home" class="" onclick='updateActive(document.getElementById("home"),[document.getElementById("about"),document.getElementById("contact"),getElementById("stuff")])' href="../index.html#h">Home</a>
+      <a id="about" class="" onclick='updateActive(document.getElementById("about"),[document.getElementById("home"),document.getElementById("contact"),getElementById("stuff")])' href="../index.html#a">About</a>
+      <a id="contact" class="" onclick='updateActive(document.getElementById("contact"),[document.getElementById("home"),document.getElementById("about"),getElementById("stuff")])' href="../index.html#c">Contact</a>
+      <a id=stuff class="active" onclick='updateActive(document.getElementById("stuff"),[document.getElementById("home"),document.getElementById("about"),getElementById("contact")' href="#">Stuff</a>
+    </div>
+
+    <div class=boxes>
+      <div class="item">
+        <h2>Russian<br />Roulette</h2>
+        <img src="../assets/icons/rr.jpg" alt="Russian Roulette Icon" class=ico></img>
+
+
+	<p class="desc-title">Description:</p>
+        <p class=desc>If I were to sum up this bot in two mere words, it would quite simply be:<br />"Shit bot"</p>
+
+        <div class=buttons>
+          <a class=button href="https://edanea.github.io/russian-roulette">Website</a>
+          <a class=button href="https://edanea.github.io/russian-roulette/pages/invite.html">Invite</a>
+        </div>
+      </div>
+
+      <div class="item">
+        <h2>Cynthia</h2><br />
+        <img src="../assets/icons/cyn.png" alt="Cynthia Icon" class=ico></img>
+  
+        <p class="desc-title">Description:</p>
+        <p class=desc>Ever heard of "Discord Music Bots"? Well, here's <em>our</em> music bot. It's pretty alright, if I do say so myself.</p>
+
+        <div class=buttons>
+          <a class=button href="https://edanea.github.io/cynthia/">Website</a>
+          <a class=button href="https://edanea.github.io/cynthia/pages/invite.html">Invite</a>
+        </div>
+      </div>
+
+      <div class="item">
+        <h2>Edab<br />Delivery</h2>
+        <img src="../assets/icons/ed.png" alt="Edab Delivery Icon" class=ico></img>
+	
+        <p class="desc-title">Description:</p>
+        <p class=desc>Have you ever seen those weird, badly designed delivery bots on Discord? Well, that's what this is; just, it's dead -- like, really. </p>
+
+        <div class=buttons>
+          <a class=button href="https://github.com/EdanEA/edab-delivery">Website</a>
+          <a class=button id=xd onclick='inner("xd", "Do not invite this.")' href="#xd"'>Invite</a>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <style>
+  .nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  </style>
+</html>

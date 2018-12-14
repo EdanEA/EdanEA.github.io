@@ -1,0 +1,294 @@
+@-ms-viewport {
+  width: device-width;
+  height: device-width;
+}
+
+body {
+  margin: 0;
+  background: #2a2a2a;
+  font-family: "Courier new";
+  position: sticky;
+}
+
+.nav-bar {
+  display: block;
+  background-color: #000;
+  overflow: hidden;
+  width: 100%;
+}
+
+.nav-bar a {
+  text-align: center;
+  color: #f2f2f2 !important;
+  font-size: 17px;
+  padding: 16px 18px;
+  text-decoration: none;
+  float: left;
+}
+
+.nav-bar a:hover {
+  transform: scale(1.05);
+}
+
+.nav-bar a.active {
+  background-color: #0a0a0a;
+}
+
+.nav-bar img {
+  height: 44px;
+  margin-right: 5px;
+  float: right;
+}
+
+.xd {
+  min-height: calc(65vh - 70px);
+}
+
+.container {
+  padding-top: 3%;
+  position: relative;
+}
+
+.container .head {
+  font-size: 80px;
+  font-weight: bolder;
+  letter-spacing: 5px;
+  border: black 2px solid;
+  background-color: #ff0000;
+  text-shadow: 1.7px 1.8px #000;
+  padding-left: 5px;
+  color: #000;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.container .boxes {
+  margin-top: 30px;
+  position: relative;
+}
+
+#a {
+  float: left;
+  overflow: hidden;
+  width: 60%;
+  left: 0;
+  background: url("../icons/shrimp.png");
+  background-size: 100% 100%;
+}
+
+#a h1 {
+  padding-left: 15%;
+}
+
+#a p {
+  padding-left: 25px;
+}
+
+#c {
+  overflow: hidden;
+  float: right;
+  right: 0;
+  width: 30%;
+  background: url("../icons/fish.png");
+  background-size: 100% 100%;
+}
+
+.divider {
+  margin-top: 3%;
+  border-top: inset 5px #000;
+}
+
+.container .boxes div {
+  border-left: 5px solid #ff0000 !important;
+  position: absolute;
+  margin-left: 20px;
+  /* background: url("https://i.imgur.com/QMfAj2P.png") !important; */
+}
+
+.container .boxes div h1, .container .boxes div p {
+  display: inline;
+  background-color: rgb(255,255,255,0.5);
+}
+
+#c h1 {
+  padding-left: 15%;
+}
+
+#c a {
+  text-decoration: none;
+  color: #ff0000;
+}
+
+#c a:visited {
+  color: #CD0000;
+}
+
+#c ul li {
+  background-color: rgb(255,255,255,0.5) !important;
+  list-style-type: none;
+}
+
+#c ul li:not(:first-child) {
+  padding-top: 10px;
+}
+
+.footer {
+  font-size: 9px;
+  text-align: center;
+  background: url('../icons/bottom3.png');
+  background-size: 5% 100%;
+}
+
+.footer .ft {
+  color: #fff;
+}
+
+.footer p {
+  margin: 0;
+}
+
+hr {
+  height: 0.5px;
+  border: 0;
+  border-top: 1px solid #000;
+}
+
+.item {
+  border-left: solid 5px #ff0000;
+  width: 28%;
+  margin-left: 2%;
+}
+
+.item h2, .item img {
+  margin-left: 10%;
+}
+
+.buttons {
+  margin-left: 10%;
+}
+
+.buttons .button {
+  position: static;
+  background: #000;
+  text-align: center;
+  color: #f2f2f2 !important;
+  font-size: 12px;
+  padding: 5px 7px;
+  text-decoration: none;
+}
+
+.ico {
+  padding-top: 9px;
+  margin-bottom: -150px;
+  height: 128px;
+  width: 128px;
+}
+
+.boxes .desc, .boxes .desc-title {
+  position: relative;
+  top: -100px;
+  left: 250px;
+}
+
+.boxes .desc {
+  padding: 5px 7px;
+  border: dashed 3px #000;
+  background: #f0f0f0;
+  width: 120%
+}
+
+.boxes .desc-title {
+  padding-top: 50px;
+  position: relative;
+  top: -100px;
+  left: 250px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  margin: 0;
+}
+
+.boxes {
+  padding-top: 1%;
+  padding-bottom: 3%;
+}
+
+@media only screen and (max-width: 640px) {
+  .boxes .desc, .boxes .desc-title {
+    width: 78%;
+    overflow: scroll;
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 610px) {
+  .footer {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .nav-bar a {
+    text-align: center;
+    color: #f2f2f2;
+    font-size: 11px;
+    padding: 12px 14px;
+    text-decoration: none;
+    float: left;
+  }
+
+  .nav-bar img {
+    height: 38px;
+    margin-right: 5px;
+    float: right;
+  }
+
+  .container .head {
+    font-size: 40px;
+    text-shadow: 1px 1px #000;
+  }
+
+  #c {
+
+    width: 40%;
+  }
+
+  #a {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .nav-bar a {
+    text-align: center;
+    color: #f2f2f2;
+    font-size: 11px;
+    padding: 12px 14px;
+    text-decoration: none;
+    float: left;
+  }
+
+  .nav-bar img {
+    height: 38px;
+    margin-right: 5px;
+    float: right;
+  }
+
+  .container .head {
+    font-size: 20px;
+    text-shadow: 1px 1px #000;
+  }
+
+  #c {
+    overflow: scroll;
+    width: 40%;
+  }
+
+  #a {
+    width: 50%;
+  }
+}
